@@ -1,0 +1,156 @@
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 !important;
+}
+
+.cardLogin {
+    width: 600px;
+    min-width: 300px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+
+#formLogin {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 2vh;
+    transition: 1s;
+}
+
+#formRecover, #formResetPassword, #formCod {
+    display: none;
+    height: 0;
+    contain: content;
+    padding: 0 2vh;
+    border-bottom: 3px solid var(--purple);
+    transition: 1.5s;
+}
+
+#formLogin > img, #formRecover > img, #formResetPassword > img, #formCod > img {
+    display: block;
+    height: 15vh;
+    margin: 2vh auto;
+    animation: anim-ico 1s linear;
+}
+
+form > img:hover {
+    animation: anim-ico-hover 1s linear;
+}
+
+@keyframes anim-ico-hover {
+    20% {
+        translate: 5vh;
+        rotate: 20deg;
+    }
+
+    40% {
+        translate: -5vh;
+        rotate: -20deg;
+    }
+
+    60% {
+        translate: 5vh;
+        rotate: 20deg;
+    }
+
+    80% {
+        translate: -5vh;
+        rotate: -20deg;
+    }
+}
+
+.titleForm {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: var(--purple);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.inputField {
+    width: 300px;
+    padding: 1rem;
+    display: block;
+    margin-bottom: 2vh;
+    font-size: 1.1rem;
+    background: #F2F2F2;
+    background-size: 25px;
+    background-position: center left 15px;
+    background-repeat: no-repeat;
+    border-radius: 1vh;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.user {
+    background-image: url('../images/icons/Email.png');
+}
+
+.pass {
+    background-image: url('../images/icons/PassWord.png');
+}
+
+.inputField::placeholder {
+    color: var(--grey);
+}
+
+.inputField:focus {
+    border-bottom: 1px solid var(--yellow);
+}
+
+.btnForm {
+    width: 180px;
+    margin: auto;
+    padding: 1vh 10px 1vh 1vh;
+    text-align: center;
+    display: block;
+    font-size: 1.1rem;
+    border-radius: 1vh;
+    background: var(--purple);
+    background-image: url('../images/icons/Vector.png');
+    background-size: 8px;
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btnForm:hover {
+    background: var(--yellow);
+    background-image: url('../images/icons/Vector.png');
+    background-size: 8px;
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+}
+
+.msjForm {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.linkForm {
+    color: var(--yellow);
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.linkForm:hover {
+    color: var(--purple);
+}
