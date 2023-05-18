@@ -23,7 +23,8 @@ $(document).ready(() => {
             return result.text();
         })
         .then(response => {
-            alert(response.rpta);
+            alert(JSON.parse(response).rpta);
+            // console.log(JSON.parse(response).rpta);
         }).catch(error =>{
             alert(error);
         });    
