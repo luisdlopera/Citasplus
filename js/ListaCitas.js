@@ -51,7 +51,7 @@ function EliminarCita(id, $button) {
     .then(response => {
         alert(JSON.parse(response).rpta);
         // Si la eliminación fue exitosa, ocultar la fila correspondiente
-        if (response.cod == 0) {
+        if (JSON.parse(response).cod == 0) {
             $button.closest("tr").remove();
         }
     })
