@@ -13,9 +13,9 @@ $(document).ready(() => {
         let html = ``;
         response.appoiments.forEach(function (elemento) {
             html += `<tr>
-                    <td>${elemento.dateStart.replace("T", "  ")}</td>
+                    <td>${elemento.dtDateStart.replace("T", "  ")}</td>
                     <td>${elemento.intEnd} minutos</td>
-                    <td>${elemento.name}</td>
+                    <td>${elemento.strNameClient}</td>
                     <td><button class="delete-button" data-id="${elemento.id}">Eliminar</button></td>
                 </tr>`;
         });
